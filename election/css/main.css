@@ -1,0 +1,153 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.transition{
+    -webkit-transition: all 0.20s linear;
+    -moz-transition: all 0.20s linear;
+    -ms-transition: all 0.20s linear;
+    -o-transition: all 0.20s linear;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.caps{
+    text-transform: uppercase;
+}
+header{
+    display: block;
+    height: 75px;
+    width: calc(100% - 70px);
+    padding-left: 35px;
+    padding-right: 35px;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: "Maven Pro", Arial;
+    font-size: 1.1em;
+    color: rgb(0, 33, 71);
+    line-height: 75px;
+}
+header div{
+    float: left;
+    height: inherit;
+}
+header a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+header nav{
+    height: inherit;
+}
+header nav ul{
+    float: right;
+    padding: 0;
+    margin: 0;
+    height: inherit;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+main{
+    display: block;
+    min-height: calc(100% - 75px);
+    overflow: hidden;
+}
+main section{
+    height: inherit;
+    position: relative;
+}
+main section hr{
+    width: 80%;
+    display: block;
+    height: 1px;
+    border: none;
+    background-color: #0f0f0f;
+    margin: 0 auto 1em;
+}
+main section h1{
+    text-align: center;
+    margin-top: 0;
+    font-family: "Montserrat", Arial;
+    color: rgb(0, 33, 71);
+}
+#accent{
+    display: block;
+    height: 7px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+#accent span{
+    width: 33.33%;
+    display: block;
+    height:inherit;
+    float: left;
+}
+#accent-red{
+    background-color: rgb(187, 19, 62);
+}
+#accent-white{
+    background-color: #fff;
+}
+#accent-blue{
+    background-color: rgb(0, 33, 71);
+}
+#voted, #no-vote{
+    display: none;
+}
+#contestants, #questions{
+    overflow: hidden;
+    padding-bottom: 1em;
+    width: 90%;
+    margin: 0 auto;
+}
+figure{
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 5% 2.5%;
+    margin: 0;
+    text-align: center;
+}
+figure:hover{
+    cursor: pointer;
+}
+figure img{
+    height: 200px;
+    margin-bottom: 15px;
+}
+figure figcaption:after{
+    font-size: 0.5em !important;
+    font-family: "Montserrat", Arial;
+    color: #c0c0c0;
+    display: block;
+    width:100%;
+    text-align: center;
+}
+.republican:hover{
+    background-color: rgb(187, 19, 62);
+    border-color: rgb(187, 19, 62);
+    color: #fff !important;
+}
+.democrat:hover,.democratic:hover{
+    background-color: rgb(0, 33, 71);
+    border-color: rgb(0, 33, 71);
+    color: #fff !important;
+}
+.libertarian:hover{
+    background-color: rgba(255, 212, 0, 0.82);
+    border-color: rgba(255, 212, 0, 0.82);
+}
+.green:hover{
+    background-color: #00b519;
+    border-color: #00b519;
+}
